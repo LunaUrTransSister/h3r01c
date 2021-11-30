@@ -1,0 +1,36 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: black;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: Hero;
+  src: url(https://cdn.glitch.me/b8ab29ed-6f40-40da-90f3-92f76aa76ed6%2FHeroEnglish-Regular.ttf?v=1638308167413);
+}
+
+h1 {
+  font-family: Hero;
+  color: white;
+}
